@@ -12,8 +12,6 @@ class WeatherServices {
   WeatherServices(this.ApiKey);
 
   Future<Weather> getWeather(String cityName) async {
-    // final response = await http
-    //     .get(Uri.parse('$baseUrl?q=$cityName&appid=$ApiKey&units=metric'));
     final response = await http
         .get(Uri.parse('$baseUrl?q=$cityName&appid=$ApiKey&units=metric'));
 
